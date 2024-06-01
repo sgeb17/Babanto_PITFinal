@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header {
+    background-color:	#D2B48C;
+    color: white;
+    width: 200px; /* Increased width for better space */
+    height: 100vh; /* Full height */
+    position: fixed; /* Fixed position */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centered items */
+    flex-direction: column; /* Stack items vertically */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    z-index: 1000; /* Ensure it's on top */
+}
+
+nav ul.sidebar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul.sidebar li {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul.sidebar li a {
+    display: block;
+    padding: 15px 0; /* Better spacing */
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+nav ul.sidebar li a:hover {
+    background-color: ;
+}
+
+main {
+    margin-left: 200px; /* Adjust margin to match sidebar */
+    padding: 20px;
+    background-color: white;
+    width: calc(100% - 200px); /* Adjust width to fit with sidebar */
+    min-height: 100vh; /* Ensure it takes full height */
+    box-sizing: border-box; /* Include padding and border in width/height */
+}
+
+.hero {
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+.hero-content {
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.6); /* Add a semi-transparent background for better readability */
+    padding: 20px;
+    border-radius: 10px; /* Slight rounding of corners */
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.cta-button {
+    background-color: 	#D2B48C;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s; /* Smooth hover transition */
+}
+
+.cta-button:hover {
+    background-color: 	#D2B48C;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    padding: 20px;
+    gap: 20px; /* Space between items */
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+    flex: 1; /* Allow flexibility */
+    margin: 20px; /* Margin for spacing */
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px; /* Slight rounding of corners */
+    padding: 20px;
+    transition: transform 0.3s; /* Smooth transform on hover */
+}
+
+.feature:hover {
+    transform: translateY(-10px); /* Lift on hover */
+}
+
+.feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0; /* Rounded corners at the top */
+}
+
+.feature h2 {
+    color: 	#D2B48C;
+    margin: 0.5em 0;
+}
+.contact {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact h1 {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #D2B48C;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color:#D2B48C;
+}
